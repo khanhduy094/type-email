@@ -1,0 +1,44 @@
+.service {
+  margin-bottom: 250px;
+  &-title {
+    text-align: center;
+  }
+  &-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &-item {
+    width: calc(100% / 3);
+    padding: 40px 20px 60px;
+    transition: all 0.25 ease;
+  }
+  &-item:hover {
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  &-icon {
+    margin-bottom: 30px;
+  }
+  &-text {
+    display: inline-block;
+    max-width: 300px;
+    line-height: 1.6;
+  }
+}
+
+@media screen and(max-width: 767px) {
+  .service {
+    margin-bottom: 100px;
+    &-item {
+      width: 100%;
+      padding: 20px 20px 30px;
+    }
+    &-icon {
+      width: 45px;
+      height: 45px;
+      object-fit: cover;
+      border-radius: 100rem;
+      margin-bottom: 15px;
+    }
+  }
+}

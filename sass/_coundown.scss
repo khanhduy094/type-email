@@ -1,0 +1,39 @@
+.coundown {
+  background-color: #e2f471;
+  padding: 70px 0 47px;
+  margin-bottom: 200px;
+  &-container{
+    max-width: 1000px;
+  }
+  &-list {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap
+  }
+  &-heading {
+    margin-bottom: 22px;
+    font-size: 40px;
+    font-weight: 600;
+    color: $black;
+  }
+}
+
+@media screen and(max-width: 767px) {
+  .coundown {
+    padding: 50px 0 30px;
+    margin-bottom: 80px;
+    &-item {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    &-heading{
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+    &-text{
+        font-size: 14px;
+    }
+  }
+}
